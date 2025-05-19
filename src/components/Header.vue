@@ -70,5 +70,15 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+
+.p-inputtext{
+   border-radius: 8px;
+   border:  solid 1px  #13487f;
+}
+
+.p-inputtext:enabled:focus{
+   border-radius: 8px;
+   border:  solid 2px  #13487f;
+}
 </style>

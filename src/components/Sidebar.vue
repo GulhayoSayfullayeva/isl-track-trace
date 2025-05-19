@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 border-b-gray-100 border-b-2 md:basis-1/5 flex flex-row items-center md:sticky md:top-0 md:left-0 md:flex-col"
+    class=" border-b-gray-100 border-b-2 md:basis-1/5 flex flex-row items-center md:flex-col"
   >
     <div
       class="flex-6 md:h-full md:border-r-2 md:border-gray-200 flex flex-row-reverse md:flex-col"
