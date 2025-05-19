@@ -1,13 +1,13 @@
 <script>
 import Sidebar from "../src/components/Sidebar.vue";
 import Header from "../src/components/Header.vue";
-import Main from "../src/components/Main.vue";
+
 
 export default {
   components: {
     Sidebar,
     Header,
-    Main,
+    
   },
 };
 </script>
@@ -17,7 +17,7 @@ export default {
     <Sidebar />
     <main class="md:basis-4/5 flex flex-col">
       <Header />
-      <Main />
+      <router-view/>
     </main>
   </div>
 </template>

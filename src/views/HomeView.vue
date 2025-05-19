@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-   Home
+  <div class="p-4 text-center text-bold">
+    Main Page
   </div>
 </template>
 
