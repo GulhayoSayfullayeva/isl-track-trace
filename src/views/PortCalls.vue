@@ -27,7 +27,7 @@
         </template>
       </Breadcrumb>
     </p>
-    <div class="highlight p-6 text-left font-bold text-3xl md:p-8">
+    <div class="highlight p-7 text-left font-bold text-3xl md:p-9">
       Port Calls
     </div>
     <div class="flex flex-col m-2 md:m-8 md:p-4">
@@ -46,7 +46,11 @@
         class="m-6"
       >
         <Column field="status" header="Status"></Column>
-        <Column field="vesselName" header="Vessel"></Column>
+        <Column field="vesselName" header="Vessel" style="color: #14387f; font-weight: bold; text-align: center;"
+        :pt="{
+            columnHeaderContent: 'flex justify-center text-gray-700'
+          }">
+        </Column>
         <Column field="terminalName" header="Terminal"></Column>
         <Column header="Voyage" style="text-align: center;"
         :pt="{
@@ -59,8 +63,8 @@
               <div>{{ slotProps.data.carrierCode }}<br /></div>
               <div>
                 <i class="pi pi-angle-down"></i>
-                {{ slotProps.data.incomingVoyageNumber }} -
-                <i class="pi pi-angle-up"></i>
+                {{ slotProps.data.incomingVoyageNumber }}
+                <i class="pi pi-angle-up pl-2 md:pl-4"></i>
                 {{ slotProps.data.outgoingVoyageNumber }}
               </div>
             </div>
@@ -79,7 +83,7 @@ export default {
     return {
       home: {
         label: "Breadcrumb",
-        route: "/home",
+        route: "/",
       },
       items: [
         { label: "Navigation" },
